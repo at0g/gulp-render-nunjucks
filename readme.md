@@ -1,6 +1,11 @@
 # gulp-nunjucks-data
 
-A gulp plugin to render nunjucks templates.
+A gulp plugin to render nunjucks templates with the following features:
+
+- Render each nunjucks template from `gulp.src`, optionally with `gulp-data` and/or a shared data context
+- Template `file.data` (via gulp-data) through one (or more) templates to create multiple outputs
+- Use your preferred nunjucks version (1.x peer dependency) 
+- Well tested with 100% code coverage
 
 ## installation
 
@@ -133,8 +138,8 @@ gulp.task('html', function(){
 
 **output**
 ```
-dest/tpl1.html
-dest/tpl2.html
+dest/tpl1.html  // message = 'hello from tpl1.html'
+dest/tpl2.html  // message = 'hello from tpl2.html'
 ```
 
 
