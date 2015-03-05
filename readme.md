@@ -39,8 +39,10 @@ gulp.task('html', function(){
 ```
 
 **output**
+```
 dest/tpl1.html
 dest/tpl2.html
+```
 
 ### template('template-name.nunj')
 
@@ -63,9 +65,10 @@ gulp.task('html', function(){
 });
 ```
 **output**
+```
 dest/foo.html
 dest/bar.html
-
+```
 
 ### template(function(file){...})
 **gulpfile.js**
@@ -92,9 +95,10 @@ gulp.task('html', function(){
 });
 ```
 **output**
+```
 dest/foo.html   // rendered using preview.nunj
 dest/bar.html   // rendered using feature.nunj
-
+```
 
 ## notes
 
@@ -128,9 +132,10 @@ gulp.task('html', function(){
 ```
 
 **output**
+```
 dest/tpl1.html
 dest/tpl2.html
-
+```
 
 
 ## tests
