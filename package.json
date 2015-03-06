@@ -1,6 +1,6 @@
 {
   "name": "gulp-render-nunjucks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Render nunjucks templates with gulp",
   "main": "index.js",
   "repository": {

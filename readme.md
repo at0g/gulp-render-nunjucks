@@ -5,14 +5,14 @@ A gulp plugin to render nunjucks templates with the following features:
 - Render each nunjucks template from `gulp.src`, optionally with `gulp-data` and/or a shared data context
 - Template `file.data` (via gulp-data) through one (or more) templates to create multiple outputs
 - Use your preferred nunjucks version (1.x peer dependency) 
-- 100% code coverage with a full suite of mocha tests
+- 100% code coverage with a full suite of tests
 
 
 ## installation
 
 `npm install gulp-nunjucks-data --save-dev`
 
-While not required, it's recommended it install gulp-data and gulp-rename to use before/after this plugin
+While not required, `gulp-data` and `gulp-rename` are very useful with this plugin.
 
 `npm install gulp-data gulp-rename --save-dev` 
 
@@ -120,7 +120,6 @@ render().
 For example:
 
 **gulpfile.js**
-
 ```
 var data = require('gulp-data');
 var rename = require('gulp-rename');
