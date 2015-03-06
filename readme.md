@@ -1,4 +1,4 @@
-# gulp-nunjucks-data
+# gulp-render-nunjucks
 
 A gulp plugin to render nunjucks templates with the following features:
 
@@ -10,7 +10,7 @@ A gulp plugin to render nunjucks templates with the following features:
 
 ## installation
 
-`npm install gulp-nunjucks-data --save-dev`
+`npm install gulp-render-nunjucks --save-dev`
 
 While not required, `gulp-data` and `gulp-rename` are very useful with this plugin.
 
@@ -21,12 +21,12 @@ While not required, `gulp-data` and `gulp-rename` are very useful with this plug
 
 ```
 // Render gulp.src as nunjucks template(s).
-require('gulp-nunjucks-data').render( [data] );
+require('gulp-render-nunjucks').render( [data] );
 ```
 
 ```
 // Render template.nunj for each file in gulp.src
-require('gulp-nunjucks-data').template('template.nunj')
+require('gulp-render-nunjucks').template('template.nunj')
 ```
 
 
@@ -38,7 +38,7 @@ require('gulp-nunjucks-data').template('template.nunj')
 
 ```
 var rename = require('gulp-rename');
-var nunj = require('gulp-nunjucks-data');
+var nunj = require('gulp-render-nunjucks');
 
 gulp.task('html', function(){
     return gulp.src(['tpl1.nunj', 'tpl2.nunj'])
@@ -62,7 +62,7 @@ dest/tpl2.html
 var data        = require('gulp-data');
 var rename      = require('gulp-rename');
 var requireNew  = require('require-new');
-var nunj        = require('gulp-nunjucks-data');
+var nunj        = require('gulp-render-nunjucks');
 
 gulp.task('html', function(){
     return gulp.src(['data/foo.js', 'data/bar.json'], { base: 'data', read: false})
@@ -87,7 +87,7 @@ dest/bar.html
 var data        = require('gulp-data');
 var rename      = require('gulp-rename');
 var requireNew  = require('require-new');
-var nunj        = require('gulp-nunjucks-data');
+var nunj        = require('gulp-render-nunjucks');
 
 gulp.task('html', function(){
     return gulp.src(['data/foo.js', 'data/bar.json'], { base: 'data', read: false})
@@ -123,7 +123,7 @@ For example:
 ```
 var data = require('gulp-data');
 var rename = require('gulp-rename');
-var nunj = require('gulp-nunjucks-data');
+var nunj = require('gulp-render-nunjucks');
 
 gulp.task('html', function(){
     return gulp.src(['tpl1.nunj', 'tpl2.nunj'])
