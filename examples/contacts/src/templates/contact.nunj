@@ -1,0 +1,11 @@
+{% extends 'layouts/page.nunj' %}
+
+{% block body %}
+
+<div class="contact">
+
+    <h2 class="contact__name">Hi, my name is {{ name | title }}</h2>
+
+</div>
+
+{% endblock %}

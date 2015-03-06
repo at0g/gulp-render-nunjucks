@@ -1,0 +1,22 @@
+{
+  "name": "gulp-render-nunjucks-examples-with-data",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^1.1.1",
+    "event-stream": "^3.2.2",
+    "gulp": "^3.8.11",
+    "gulp-connect": "^2.2.0",
+    "gulp-data": "^1.2.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-render-nunjucks": "^1.0.0",
+    "nunjucks": "^1.1.0",
+    "require-new": "^1.0.2"
+  }
+}

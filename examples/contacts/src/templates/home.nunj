@@ -1,0 +1,9 @@
+{% extends 'layouts/page.nunj' %}
+
+{% block body %}
+    <h1>Contacts</h1>
+
+    <ul>{% for contact in contacts %}
+        <li><a href="{{ contact.url }}">{{ contact.name | title }}</a></li>
+    {% endfor %}</ul>
+{% endblock %}

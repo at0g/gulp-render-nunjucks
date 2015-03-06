@@ -28,12 +28,15 @@ exports.template = function(tpl) {
 
     return through.obj(function(file, enc, cb){
         var name;
+
         if(typeof(tpl) === 'function'){
             name = tpl.call(this, file);
         }
         else {
             name = tpl;
         }
+
+        console.log('through.obj called with name of %s', name);
 
         nunjucks.render(name, file.data, onRender(file, this, cb));
     });
