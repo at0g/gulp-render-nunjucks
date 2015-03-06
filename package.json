@@ -1,0 +1,40 @@
+{
+  "name": "gulp-render-nunjucks",
+  "version": "1.0.0",
+  "description": "Render nunjucks templates with gulp",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/at0g/gulp-render-nunjucks"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --ui bdd -R spec -t 5000"
+  },
+  "keywords": [
+    "gulpplugin",
+    "nunjucks",
+    "template",
+    "render",
+    "html",
+    "data"
+  ],
+  "author": "Ben Daley <ben@fanboy.io> (http://fanboy.io)",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^3.0.4",
+    "gutil": "^1.6.4",
+    "lodash": "^3.3.1",
+    "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "istanbul": "^0.3.7",
+    "mocha": "^2.1.0",
+    "sinon": "^1.13.0",
+    "sinon-chai": "^2.7.0"
+  },
+  "peerDependencies": {
+    "nunjucks": "1.x"
+  }
+}
