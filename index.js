@@ -36,8 +36,6 @@ exports.template = function(tpl) {
             name = tpl;
         }
 
-        console.log('through.obj called with name of %s', name);
-
         nunjucks.render(name, file.data, onRender(file, this, cb));
     });
 
