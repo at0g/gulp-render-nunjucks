@@ -14,7 +14,13 @@ A gulp plugin to render nunjucks templates with the following features:
 
 While not required, `gulp-data` and `gulp-rename` are very useful with this plugin.
 
-`npm install gulp-data gulp-rename --save-dev` 
+`npm install gulp-data gulp-rename --save-dev`
+
+### A note about file watch
+
+[This bug](https://github.com/mozilla/nunjucks/issues/376) effects the internal watch mechanism of nunjucks
+ v.1.2.0. If you intend to watch and render templates on change, it's recommended to `npm install nunjucks@1.1.0` until
+ the issue is resolved.
 
 
 ## api
