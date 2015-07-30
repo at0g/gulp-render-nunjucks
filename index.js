@@ -52,3 +52,5 @@ exports.render = function(context){
     });
 
 };
+
+exports.configure = nunjucks.configure;
