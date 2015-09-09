@@ -15,8 +15,8 @@
     "gulp-connect": "^2.2.0",
     "gulp-data": "^1.2.0",
     "gulp-rename": "^1.2.0",
-    "gulp-render-nunjucks": "^1.0.0",
-    "nunjucks": "^1.1.0",
+    "gulp-render-nunjucks": "^2.0.0",
+    "nunjucks": "^2.0.0",
     "require-new": "^1.0.2"
   }
 }
