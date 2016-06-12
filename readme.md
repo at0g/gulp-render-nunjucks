@@ -68,7 +68,7 @@ gulp.task('html', function(){
     return gulp.src(['data/foo.js', 'data/bar.json'], { base: 'data', read: false})
         .pipe( data(function(file){
             return requireNew(file.path);
-        }) );
+        }))
         .pipe( nunj.template('foobar.nunj') )
         .pipe( rename({ extname: '.html' })
         .pipe( gulp.dest('dest') )
@@ -93,9 +93,9 @@ gulp.task('html', function(){
     return gulp.src(['data/foo.js', 'data/bar.json'], { base: 'data', read: false})
         .pipe( data(function(file){
             return requireNew(file.path);
-        }) );
+        }))
         .pipe( nunj.template(function(file){
-            if(file.relative === 'foo.js'){
+            if(file.data.relative === 'foo.js'){
                 return 'preview.nunj';
             }
             return 'feature.nunj';
